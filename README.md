@@ -1,2 +1,2 @@
 # TrailerBookingCalendar
-Plugin for WP to book a trailer with use og FullCalendar.io
+Plugin for WP to book a trailer with use of FullCalendar.io
