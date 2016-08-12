@@ -17,7 +17,8 @@ jQuery(document).ready(function($) {
     select: function (start, end) {
       if (clicked===0) {
         $('.trailercalendar-modal-background').css("height", $('body').height());
-        var modaltop = ($(window).height()/2)-($('.trailercalendar-modal').height()/2)
+        var modaltop = $(document).scrollTop() + ($(window).height()/2)-($('.trailercalendar-modal').height()/2)
+        console.log(modaltop);
         $('.trailercalendar-modal').css("top", modaltop);
         $('.trailercalendar-modal-background').show();
         $('#starthidden').val(start);
@@ -66,7 +67,6 @@ function findtid(tidspunkt) {
 
   var maaned = tidspunkt.slice(4, 7);
   var dato = tidspunkt.slice(8, 10);
-  console.log(dato);
   var aar = tidspunkt.slice(11, 15);
   var time = tidspunkt.slice(16, 18);
   var minut = tidspunkt.slice(19, 21);
